@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'sygno-app';
+  hola = 'Mundo!';
+  today =  new Date(); 
+
+  nVariable = 0;
+  
+  aumentar():void{
+    this.nVariable += 10;
+  }
+  disminuir():void{
+    this.nVariable -= 10;
+  }
+
 }
